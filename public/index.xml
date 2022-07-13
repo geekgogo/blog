@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Be The One</title>
+    <link>https://geekgogo.github.io/</link>
+    <description>Recent content on Be The One</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Jun 2019 15:45:08 +0800</lastBuildDate><atom:link href="https://geekgogo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Cut Pro将视频帧导出为图像</title>
+      <link>https://geekgogo.github.io/posts/final-cut-pro%E5%B0%86%E8%A7%86%E9%A2%91%E5%B8%A7%E5%AF%BC%E5%87%BA%E4%B8%BA%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Tue, 18 Jun 2019 15:45:08 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/final-cut-pro%E5%B0%86%E8%A7%86%E9%A2%91%E5%B8%A7%E5%AF%BC%E5%87%BA%E4%B8%BA%E5%9B%BE%E5%83%8F/</guid>
+      <description>前言 在观看喜欢的电影时，难免会对电影中的某一帧非常欣赏，自然想将其保存下来。对于在线电影的普通做法就是 使用截图，如果是本地视频，截图无法保证原视频的清晰度。以此记录使用 final cut pro 导出视频帧的方法 。 操作步骤</description>
+    </item>
+    
+    <item>
+      <title>源码安装ngnix并将命令添加systemctl</title>
+      <link>https://geekgogo.github.io/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</link>
+      <pubDate>Mon, 17 Jun 2019 13:54:57 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</guid>
+      <description>编译安装前所需的环境 1. gcc安装 安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，如果没有 gcc 环境，则需要安装 yum install gcc-c++ 2. PCRE pcre-devel 安装 PCRE(Perl Compatible Regular Expressions) 是一个Perl库，包括 perl 兼容的正则表达式库。nginx 的 http 模块使</description>
+    </item>
+    
+    <item>
+      <title>关闭Adobe Creative Cloud自启动</title>
+      <link>https://geekgogo.github.io/posts/%E5%85%B3%E9%97%ADadobe-creative-cloud%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 17 Jun 2019 10:51:36 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/%E5%85%B3%E9%97%ADadobe-creative-cloud%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
+      <description>前言 macOS 系统安装adobe家的软件时（如photoshop）会自动安装adobe creative cloud，令人厌烦的是这玩意儿会随着电脑自启动，最新的版本已经无法在界面找到关闭自启动的选项了，所以需要使用命令行来关</description>
+    </item>
+    
+    <item>
+      <title>Jinja2模板修改循环外变量的值</title>
+      <link>https://geekgogo.github.io/posts/jinja2%E6%A8%A1%E6%9D%BF%E4%BF%AE%E6%94%B9%E5%BE%AA%E7%8E%AF%E5%A4%96%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</link>
+      <pubDate>Mon, 17 Jun 2019 10:50:27 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/jinja2%E6%A8%A1%E6%9D%BF%E4%BF%AE%E6%94%B9%E5%BE%AA%E7%8E%AF%E5%A4%96%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</guid>
+      <description>前言 由于jinja模板的作用域的原因，在循环内无法修改循环外变量的值，可用另外一种方法来实现 问题复现 {% set number = 0 %} {% for i in range(4) %} {% set number = number + 1 %} {{ number }} &amp;lt;!--结果依次打印为：1，2，3，4--&amp;gt</description>
+    </item>
+    
+    <item>
+      <title>Mac系统创建新的管理员账号</title>
+      <link>https://geekgogo.github.io/posts/mac%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7/</link>
+      <pubDate>Mon, 17 Jun 2019 10:49:08 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/mac%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7/</guid>
+      <description>前言 以激活电脑，重新配置系统界面来为mac系统重新创建管理员账号 解决办法 进入单用户模式，mac用户在电脑刚启动时按住command + s组合键。黑苹果用户clover四叶草界面，选择启动图标后空格进入选</description>
+    </item>
+    
+    <item>
+      <title>Pycharm将设置导入至github</title>
+      <link>https://geekgogo.github.io/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</link>
+      <pubDate>Mon, 17 Jun 2019 10:46:09 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</guid>
+      <description>前言 每个程序员对于自己的 ide 都有独特的审美。每次在新的环境中都要配置一次熟悉的 ide 界面尤其麻烦。拿 pycharm 来举例，传统的做法是将配置好的 ide 设置导出，保存一份，然后再在新的环境中导出。这样也会增 加新的麻烦，导出的</description>
+    </item>
+    
+    <item>
+      <title>Windows右键添加自定义菜单选项</title>
+      <link>https://geekgogo.github.io/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</link>
+      <pubDate>Mon, 17 Jun 2019 10:05:04 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</guid>
+      <description>这篇博客简单介绍如何给 windows 鼠标右键添加自定义的菜单选项，操作步骤如下: 打开运行输入 regedit（打开注册表） 依次定位：HKEY_CLASSES_ROOT*\shell 在 shell 项右键新建项，名字为右键时显示</description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://geekgogo.github.io/about/</link>
+      <pubDate>Mon, 17 Jun 2019 10:03:19 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/about/</guid>
+      <description>Geekgogo 邮箱：detail.ed@outlook.com</description>
+    </item>
+    
+  </channel>
+</rss>

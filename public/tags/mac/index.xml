@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on Be The One</title>
+    <link>https://geekgogo.github.io/tags/mac/</link>
+    <description>Recent content in mac on Be The One</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Jun 2019 15:45:08 +0800</lastBuildDate><atom:link href="https://geekgogo.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Final Cut Pro将视频帧导出为图像</title>
+      <link>https://geekgogo.github.io/posts/final-cut-pro%E5%B0%86%E8%A7%86%E9%A2%91%E5%B8%A7%E5%AF%BC%E5%87%BA%E4%B8%BA%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Tue, 18 Jun 2019 15:45:08 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/final-cut-pro%E5%B0%86%E8%A7%86%E9%A2%91%E5%B8%A7%E5%AF%BC%E5%87%BA%E4%B8%BA%E5%9B%BE%E5%83%8F/</guid>
+      <description>前言 在观看喜欢的电影时，难免会对电影中的某一帧非常欣赏，自然想将其保存下来。对于在线电影的普通做法就是 使用截图，如果是本地视频，截图无法保证原视频的清晰度。以此记录使用 final cut pro 导出视频帧的方法 。 操作步骤</description>
+    </item>
+    
+    <item>
+      <title>关闭Adobe Creative Cloud自启动</title>
+      <link>https://geekgogo.github.io/posts/%E5%85%B3%E9%97%ADadobe-creative-cloud%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Mon, 17 Jun 2019 10:51:36 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/%E5%85%B3%E9%97%ADadobe-creative-cloud%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
+      <description>前言 macOS 系统安装adobe家的软件时（如photoshop）会自动安装adobe creative cloud，令人厌烦的是这玩意儿会随着电脑自启动，最新的版本已经无法在界面找到关闭自启动的选项了，所以需要使用命令行来关</description>
+    </item>
+    
+    <item>
+      <title>Mac系统创建新的管理员账号</title>
+      <link>https://geekgogo.github.io/posts/mac%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7/</link>
+      <pubDate>Mon, 17 Jun 2019 10:49:08 +0800</pubDate>
+      
+      <guid>https://geekgogo.github.io/posts/mac%E7%B3%BB%E7%BB%9F%E5%88%9B%E5%BB%BA%E6%96%B0%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7/</guid>
+      <description>前言 以激活电脑，重新配置系统界面来为mac系统重新创建管理员账号 解决办法 进入单用户模式，mac用户在电脑刚启动时按住command + s组合键。黑苹果用户clover四叶草界面，选择启动图标后空格进入选</description>
+    </item>
+    
+  </channel>
+</rss>

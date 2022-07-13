@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="geekgogo" />
+	
+	
+	
+	<title>关闭Adobe Creative Cloud自启动 ｜ Be The One</title>
+	
+    
+    
+    <meta name="description" content="前言 macOS 系统安装adobe家的软件时（如photoshop）会自动安装adobe creative cloud，令人厌烦的是这玩意儿会随着电脑自启动，最新的版本已经无法在界面找到关闭自启动的选项了，所以需要使用命令行来关" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://geekgogo.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.iocss/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.io/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.io/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">首页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://geekgogo.github.io">
+                    
+                    <img src="https://geekgogo.github.io/images/logo.svg"/>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">wisdom</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/geekgogo" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                <a href="https://geekgogo.github.io/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/%E5%85%B3%E9%97%ADadobe-creative-cloud%E8%87%AA%E5%90%AF%E5%8A%A8/'>关闭Adobe Creative Cloud自启动</a></h2>
+                        <span class="date">2019.06.17</span>
+                    </div>
+                    <div class="post_content markdown"><h3 id="前言">前言</h3>
+<blockquote>
+<p>macOS 系统安装adobe家的软件时（如photoshop）会自动安装adobe creative cloud，令人厌烦的是这玩意儿会随着电脑自启动，最新的版本已经无法在界面找到关闭自启动的选项了，所以需要使用命令行来关闭，几个命令就可搞定。</p>
+</blockquote>
+<h3 id="操作如下">操作如下</h3>
+<h4 id="打开终端按照需要输入以下命令">打开终端，按照需要输入以下命令</h4>
+<p><strong>禁用</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
+</code></pre></div><p><strong>启用</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">launchctl load -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist
+</code></pre></div></div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://geekgogo.github.io/tags/mac/">Mac</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>牛奶已经打翻了，哭有什么用呢</span>
+    </div>
+</footer>
+    <script src="https://geekgogo.github.io/js/jquery-3.5.1.min.js"></script>
+<link href="https://geekgogo.github.io/css/fancybox.min.css" rel="stylesheet">
+<script src="https://geekgogo.github.io/js/fancybox.min.js"></script>
+<script src="https://geekgogo.github.io/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>

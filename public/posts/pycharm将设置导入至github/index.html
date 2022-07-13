@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="geekgogo" />
+	
+	
+	
+	<title>Pycharm将设置导入至github ｜ Be The One</title>
+	
+    
+    
+    <meta name="description" content="前言 每个程序员对于自己的 ide 都有独特的审美。每次在新的环境中都要配置一次熟悉的 ide 界面尤其麻烦。拿 pycharm 来举例，传统的做法是将配置好的 ide 设置导出，保存一份，然后再在新的环境中导出。这样也会增 加新的麻烦，导出的" />
+    
+
+    
+    
+    <meta name="keywords" content="Hugo, theme, zozo" />
+    
+
+	
+    
+    <link rel="shortcut icon" href="https://geekgogo.github.io/images/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.iocss/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.io/css/zozo.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://geekgogo.github.io/css/highlight.css" />
+
+    
+    
+</head>
+
+<body>
+    <div class="main animate__animated animate__fadeInDown">
+        <div class="nav_container animated fadeInDown">
+    <div class="site_nav" id="site_nav">
+        <ul>
+            
+            <li>
+                <a href="/">首页</a>
+            </li>
+            
+            <li>
+                <a href="/posts/">归档</a>
+            </li>
+            
+            <li>
+                <a href="/tags/">标签</a>
+            </li>
+            
+            <li>
+                <a href="/about/">关于</a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="menu_icon">
+        <a id="menu_icon"><i class="ri-menu-line"></i></a>
+    </div>
+</div>
+        <div class="header animated fadeInDown">
+    <div class="site_title_container">
+        <div class="site_title">
+            <h1>
+                <a href="https://geekgogo.github.io">
+                    
+                    <img src="https://geekgogo.github.io/images/logo.svg"/>
+                </a>
+            </h1>
+        </div>
+        <div class="description">
+            <p class="sub_title">wisdom</p>
+            <div class="my_socials">
+                
+                
+                <a href="https://github.com/geekgogo" title="github" target="_blank"><i class="ri-github-fill"></i></a>
+                
+                
+                <a href="https://geekgogo.github.io/index.xml" type="application/rss+xml" title="rss" target="_blank"><i
+                        class="ri-rss-fill"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="content">
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/'>Pycharm将设置导入至github</a></h2>
+                        <span class="date">2019.06.17</span>
+                    </div>
+                    <div class="post_content markdown"><h3 id="前言">前言</h3>
+<blockquote>
+<p>每个程序员对于自己的 ide 都有独特的审美。每次在新的环境中都要配置一次熟悉的 ide 界面尤其麻烦。拿
+pycharm 来举例，传统的做法是将配置好的 ide 设置导出，保存一份，然后再在新的环境中导出。这样也会增
+加新的麻烦，导出的配置文件丢失咋办？这时就需要用到 github 了，pycharm 有专门的选项将设置保存到
+github 上。</p>
+</blockquote>
+<h4 id="操作步骤如下">操作步骤如下</h4>
+<ol>
+<li>
+<p>在 github 上新建一个仓库</p>
+</li>
+<li>
+<p>申请一个 github 的 Access token，点
+击<a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line">这里</a>查
+看申请步骤，申请成功后记得妥善保管，此 access token 只显示一次。</p>
+</li>
+<li>
+<p>如下图，找到 pycharm 的 settings repository</p>
+<p><img src="/images/2019-06-11-006tNbRwly1fygr24eh9qj30ga0hxwm3.jpg" alt=""></p>
+</li>
+<li>
+<p>出现让你输入仓库地址，将第一步的地址填入即可。</p>
+</li>
+<li>
+<p>第一次设置会出现输入 access token 框，将第 2 步申请到的填入。</p>
+</li>
+<li>
+<p>之后选择<strong>Overwrite Remote</strong>，覆盖到远程地址，这里相当于 git 的 push 操作</p>
+<p><img src="/images/2019-06-11-006tNbRwly1fygre9ym58j30b7038q36.jpg" alt=""></p>
+</li>
+<li>
+<p>在新的环境上同步时选择<strong>Overwrite Local</strong>即可。</p>
+</li>
+</ol>
+<p><strong>ps：以上参考<a href="https://yuhao.space/blog/2017/10/pycharm-setting-base/">此文档</a>，里面有记录更详细的内
+容，若有疑问可移步阅读参考</strong></p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://geekgogo.github.io/tags/pycharm/">pycharm</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="doc_comments"></div>
+                
+            </div>
+        </div>
+    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+    <footer class="footer">
+    <div class="powered_by">
+        <a href="https://varkai.com">Designed by VarKai,</a>
+        <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+    </div>
+
+    <div class="footer_slogan">
+        <span>牛奶已经打翻了，哭有什么用呢</span>
+    </div>
+</footer>
+    <script src="https://geekgogo.github.io/js/jquery-3.5.1.min.js"></script>
+<link href="https://geekgogo.github.io/css/fancybox.min.css" rel="stylesheet">
+<script src="https://geekgogo.github.io/js/fancybox.min.js"></script>
+<script src="https://geekgogo.github.io/js/zozo.js"></script>
+
+
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
+
+</body>
+
+</html>
