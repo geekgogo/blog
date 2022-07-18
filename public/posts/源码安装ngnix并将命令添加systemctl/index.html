@@ -98,63 +98,63 @@
 <blockquote>
 <p>安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，如果没有 gcc 环境，则需要安装</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install gcc-c++
-</code></pre></div><h3 id="2-pcre-pcre-devel-安装">2. PCRE pcre-devel 安装</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install gcc-c++
+</span></span></code></pre></div><h3 id="2-pcre-pcre-devel-安装">2. PCRE pcre-devel 安装</h3>
 <blockquote>
 <p>PCRE(Perl Compatible Regular Expressions) 是一个Perl库，包括 perl 兼容的正则表达式库。nginx 的 http 模块使用 pcre 来解析正则表达式，所以需要在 linux 上安装 pcre 库，pcre-devel 是使用 pcre 开发的一个二次开发库。nginx也需要此库</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install -y pcre pcre-devel
-</code></pre></div><h3 id="3-zlib-安装">3. zlib 安装</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install -y pcre pcre-devel
+</span></span></code></pre></div><h3 id="3-zlib-安装">3. zlib 安装</h3>
 <blockquote>
 <p>zlib 库提供了很多种压缩和解压缩的方式， nginx 使用 zlib 对 http 包的内容进行 gzip ，所以需要在 Centos 上安装 zlib 库</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install -y zlib zlib-devel
-</code></pre></div><h3 id="4-openssl-安装">4. OpenSSL 安装</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install -y zlib zlib-devel
+</span></span></code></pre></div><h3 id="4-openssl-安装">4. OpenSSL 安装</h3>
 <blockquote>
 <p>OpenSSL 是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及 SSL 协议，并提供丰富的应用程序供测试或其它目的使用。
 nginx 不仅支持 http 协议，还支持 https（即在ssl协议上传输http），所以需要在 Centos 安装 OpenSSL 库</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">yum install -y openssl openssl-devel
-</code></pre></div><h1 id="编译安装nginx">编译安装nginx</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install -y openssl openssl-devel
+</span></span></code></pre></div><h1 id="编译安装nginx">编译安装nginx</h1>
 <h3 id="5-下载源码nginx">5. 下载源码nginx</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">wget -c https://nginx.org/download/nginx-1.12.1.tar.gz
-</code></pre></div><h3 id="6-解压编译">6. 解压编译</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">wget -c https://nginx.org/download/nginx-1.12.1.tar.gz
+</span></span></code></pre></div><h3 id="6-解压编译">6. 解压编译</h3>
 <blockquote>
 <p>编译完成后nginx的各种文件路径为/usr/local/nginx</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">tar -xzvf nginx-1.12.1.tar.gz
-cd nginx-1.12.1
-./configure
-make &amp;&amp; make install
-</code></pre></div><h1 id="将nginx启动和查看版本命令添加到系统中">将nginx启动和查看版本命令添加到系统中</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar -xzvf nginx-1.12.1.tar.gz
+</span></span><span class="line"><span class="cl">cd nginx-1.12.1
+</span></span><span class="line"><span class="cl">./configure
+</span></span><span class="line"><span class="cl">make &amp;&amp; make install
+</span></span></code></pre></div><h1 id="将nginx启动和查看版本命令添加到系统中">将nginx启动和查看版本命令添加到系统中</h1>
 <h3 id="7-原始启动停止命令">7. 原始启动停止命令</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf  # 启动
-/usr/local/nginx/sbin/nginx -s stop  # 停止
-</code></pre></div><h3 id="8-添加到systemctl中">8. 添加到systemctl中</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf  # 启动
+</span></span><span class="line"><span class="cl">/usr/local/nginx/sbin/nginx -s stop  # 停止
+</span></span></code></pre></div><h3 id="8-添加到systemctl中">8. 添加到systemctl中</h3>
 <blockquote>
 <p>在/usr/lib/systemd/system目录下新建nginx.service文件内容如下</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">[Unit]
-Description=nginx - high performance web server
-Documentation=http://nginx.org/en/docs/
-After=network.target remote-fs.target nss-lookup.target
-[Service]
-Type=forking
-PIDFile=/var/run/nginx.pid  # 在nginx配置文件中将pid文件路径改为此处
-ExecStartPre=/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf  # 此处文件路径需与源码安装路径保持一致
-ExecStart=/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf  # 同上
-ExecReload=/bin/kill -s HUP $MAINPID
-ExecStop=/bin/kill -s QUIT $MAINPID
-PrivateTmp=true
-[Install]
-WantedBy=multi-user.target
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[Unit]
+</span></span><span class="line"><span class="cl">Description=nginx - high performance web server
+</span></span><span class="line"><span class="cl">Documentation=http://nginx.org/en/docs/
+</span></span><span class="line"><span class="cl">After=network.target remote-fs.target nss-lookup.target
+</span></span><span class="line"><span class="cl">[Service]
+</span></span><span class="line"><span class="cl">Type=forking
+</span></span><span class="line"><span class="cl">PIDFile=/var/run/nginx.pid  # 在nginx配置文件中将pid文件路径改为此处
+</span></span><span class="line"><span class="cl">ExecStartPre=/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf  # 此处文件路径需与源码安装路径保持一致
+</span></span><span class="line"><span class="cl">ExecStart=/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf  # 同上
+</span></span><span class="line"><span class="cl">ExecReload=/bin/kill -s HUP $MAINPID
+</span></span><span class="line"><span class="cl">ExecStop=/bin/kill -s QUIT $MAINPID
+</span></span><span class="line"><span class="cl">PrivateTmp=true
+</span></span><span class="line"><span class="cl">[Install]
+</span></span><span class="line"><span class="cl">WantedBy=multi-user.target
+</span></span></code></pre></div><blockquote>
 <p>完成后即可使用</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">systemctl start | stop nginx
-</code></pre></div><h3 id="9-将nginx命令添加到系统中">9. 将nginx命令添加到系统中</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">cp /usr/local/nginx/sbin/nginx /usr/bin/nginx
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl start | stop nginx
+</span></span></code></pre></div><h3 id="9-将nginx命令添加到系统中">9. 将nginx命令添加到系统中</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cp /usr/local/nginx/sbin/nginx /usr/bin/nginx
+</span></span></code></pre></div><blockquote>
 <p>完成后可以使用<strong>nginx -t</strong> 或者 <strong>nginx -V</strong></p>
 </blockquote>
 </div>
@@ -188,7 +188,7 @@ WantedBy=multi-user.target
     </div>
 
     <div class="footer_slogan">
-        <span>牛奶已经打翻了，哭有什么用呢</span>
+        <span>因为害怕自己并非明珠而不敢刻苦琢磨，又因为有几分相信自己是明珠，而不能与瓦砾碌碌为伍，遂逐渐远离世间，疏避人群，结果在内心不断地用愤懑和羞怒饲育着自己懦弱的自尊心。世上每个人都是驯兽师，而那匹猛兽，就是每人各自的性情。</span>
     </div>
 </footer>
     <script src="https://geekgogo.github.io/js/jquery-3.5.1.min.js"></script>

@@ -98,19 +98,19 @@
 <p>由于jinja模板的作用域的原因，在循环内无法修改循环外变量的值，可用另外一种方法来实现</p>
 </blockquote>
 <h3 id="问题复现">问题复现</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{% set number = 0 %}
-{% for i in range(4) %}
-{% set number = number + 1 %}
-{{ number }}  &lt;!--结果依次打印为：1，2，3，4--&gt;
-{% endfor %}
-{{ number }}  &lt;!--依旧为0--&gt;
-</code></pre></div><h3 id="解决方法">解决方法</h3>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">{% set number = [0] %}
-{% for i in range(4) %}
-{% if number.append(number.pop() + 1) %}{% endif %}
-{% endfor %}
-{{ number[0] }} &lt;!--结果为4--&gt;
-</code></pre></div></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% set number = 0 %}
+</span></span><span class="line"><span class="cl">{% for i in range(4) %}
+</span></span><span class="line"><span class="cl">{% set number = number + 1 %}
+</span></span><span class="line"><span class="cl">{{ number }}  &lt;!--结果依次打印为：1，2，3，4--&gt;
+</span></span><span class="line"><span class="cl">{% endfor %}
+</span></span><span class="line"><span class="cl">{{ number }}  &lt;!--依旧为0--&gt;
+</span></span></code></pre></div><h3 id="解决方法">解决方法</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{% set number = [0] %}
+</span></span><span class="line"><span class="cl">{% for i in range(4) %}
+</span></span><span class="line"><span class="cl">{% if number.append(number.pop() + 1) %}{% endif %}
+</span></span><span class="line"><span class="cl">{% endfor %}
+</span></span><span class="line"><span class="cl">{{ number[0] }} &lt;!--结果为4--&gt;
+</span></span></code></pre></div></div>
                     <div class="post_footer">
                         
                         <div class="meta">
@@ -141,7 +141,7 @@
     </div>
 
     <div class="footer_slogan">
-        <span>牛奶已经打翻了，哭有什么用呢</span>
+        <span>因为害怕自己并非明珠而不敢刻苦琢磨，又因为有几分相信自己是明珠，而不能与瓦砾碌碌为伍，遂逐渐远离世间，疏避人群，结果在内心不断地用愤懑和羞怒饲育着自己懦弱的自尊心。世上每个人都是驯兽师，而那匹猛兽，就是每人各自的性情。</span>
     </div>
 </footer>
     <script src="https://geekgogo.github.io/js/jquery-3.5.1.min.js"></script>
