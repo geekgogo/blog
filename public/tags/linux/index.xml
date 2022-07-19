@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Be The One</title>
-    <link>https://geekgogo.github.io/tags/linux/</link>
+    <link>https://blog.vunzoo.com/tags/linux/</link>
     <description>Recent content in linux on Be The One</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Jun 2019 13:54:57 +0800</lastBuildDate><atom:link href="https://geekgogo.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jun 2019 13:54:57 +0800</lastBuildDate><atom:link href="https://blog.vunzoo.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>源码安装ngnix并将命令添加systemctl</title>
-      <link>https://geekgogo.github.io/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</link>
+      <link>https://blog.vunzoo.com/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</link>
       <pubDate>Mon, 17 Jun 2019 13:54:57 +0800</pubDate>
       
-      <guid>https://geekgogo.github.io/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</guid>
+      <guid>https://blog.vunzoo.com/posts/%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85ngnix%E5%B9%B6%E5%B0%86%E5%91%BD%E4%BB%A4%E6%B7%BB%E5%8A%A0systemctl/</guid>
       <description>编译安装前所需的环境 1. gcc安装 安装 nginx 需要先将官网下载的源码进行编译，编译依赖 gcc 环境，如果没有 gcc 环境，则需要安装 yum install gcc-c++ 2. PCRE pcre-devel 安装 PCRE(Perl Compatible Regular Expressions) 是一个Perl库，包括 perl 兼容的正则表达式库。nginx 的 http 模块使</description>
     </item>
     

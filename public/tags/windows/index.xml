@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows on Be The One</title>
-    <link>https://geekgogo.github.io/tags/windows/</link>
+    <link>https://blog.vunzoo.com/tags/windows/</link>
     <description>Recent content in windows on Be The One</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Jun 2019 10:05:04 +0800</lastBuildDate><atom:link href="https://geekgogo.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jun 2019 10:05:04 +0800</lastBuildDate><atom:link href="https://blog.vunzoo.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows右键添加自定义菜单选项</title>
-      <link>https://geekgogo.github.io/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</link>
+      <link>https://blog.vunzoo.com/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</link>
       <pubDate>Mon, 17 Jun 2019 10:05:04 +0800</pubDate>
       
-      <guid>https://geekgogo.github.io/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</guid>
+      <guid>https://blog.vunzoo.com/posts/windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%8F%9C%E5%8D%95%E9%80%89%E9%A1%B9/</guid>
       <description>这篇博客简单介绍如何给 windows 鼠标右键添加自定义的菜单选项，操作步骤如下: 打开运行输入 regedit（打开注册表） 依次定位：HKEY_CLASSES_ROOT*\shell 在 shell 项右键新建项，名字为右键时显示</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pycharm on Be The One</title>
-    <link>https://geekgogo.github.io/tags/pycharm/</link>
+    <link>https://blog.vunzoo.com/tags/pycharm/</link>
     <description>Recent content in pycharm on Be The One</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 17 Jun 2019 10:46:09 +0800</lastBuildDate><atom:link href="https://geekgogo.github.io/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jun 2019 10:46:09 +0800</lastBuildDate><atom:link href="https://blog.vunzoo.com/tags/pycharm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pycharm将设置导入至github</title>
-      <link>https://geekgogo.github.io/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</link>
+      <link>https://blog.vunzoo.com/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</link>
       <pubDate>Mon, 17 Jun 2019 10:46:09 +0800</pubDate>
       
-      <guid>https://geekgogo.github.io/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</guid>
+      <guid>https://blog.vunzoo.com/posts/pycharm%E5%B0%86%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5%E8%87%B3github/</guid>
       <description>前言 每个程序员对于自己的 ide 都有独特的审美。每次在新的环境中都要配置一次熟悉的 ide 界面尤其麻烦。拿 pycharm 来举例，传统的做法是将配置好的 ide 设置导出，保存一份，然后再在新的环境中导出。这样也会增 加新的麻烦，导出的</description>
     </item>
     
